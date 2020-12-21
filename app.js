@@ -1,14 +1,13 @@
 const express = require("express")
 const mongodb = require("mongodb")
 const bodyparser = require("body-parser")
+require("dotenv").config()
 const cors = require("cors")
 const app = express()
-// const cors=require("cors")
-// const mongoClient=mongodb.mongoClient;
 const mongoClient = mongodb.MongoClient;
+const port=process.env.PORT||8000
 
-
-const dbURL = "mongodb://127.0.0.1:27017";
+const dbURL =process.env.DB_URL|| "mongodb://127.0.0.1:27017";
 
 app.use(express.static("./public"))
 app.set("view engine", "ejs")
@@ -33,10 +32,10 @@ app.post("/createDetails", urlencodedParser, async (req, res) => {
 })
 
 
-app.listen(8000, (err) => {
+app.listen(port, (err) => {
     if (err) {
         throw err
     } else {
-        console.log("Server started at 8000")
+        console.log(`Server started at ${port}`)
     }
 })
