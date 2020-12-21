@@ -1,0 +1,87 @@
+li {
+    list-style-type: none;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(https://bit.ly/2VOZoR0);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#icon {
+    margin-left: 800px;
+}
+
+#nav {
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color:lightskyblue;
+    position: fixed;
+    top:0;
+    width:80%;
+}
+
+#name{
+    font-weight: bold;
+    font-size: 30px;
+}
+header{
+    margin-top: 20px;
+}
+#objective{
+    margin-top: 60px;
+    width:100%
+}
+.update{
+    margin-top: 100px;
+}
+img{
+    width:180px;
+    height:180px;
+    border-radius: 100px;
+    border:10px solid lightcyan;
+    margin: 50px;
+}
+.items{
+    margin-right: 20px;
+    background-color: lightpink;
+    padding: 10px;
+    font-size: 20px;
+}
+#education{
+    margin-top:60px;
+
+}
+.card{
+    margin-top: 20px;
+
+}
+.subhead{
+    display: inline;
+    color: rgb(116, 96, 206);
+}
+.contact{
+    background-color: rgb(52, 52, 228);
+}
+
+.contact p{
+    font-size: 25px;
+    text-align: center;
+}
+
+#objective p{
+    font-size: 20px;
+    text-align: justify;
+}
+.update{
+    margin: 10px;
+    display: block;
+    font-size: 20px;
+}
